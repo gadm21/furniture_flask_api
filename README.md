@@ -19,12 +19,12 @@ The API is containerized using Docker. The Dockerfile contains the necessary com
 
 To build the Docker image:
 ```
-docker build -t fashion-flask-api .
+docker build -t furniture-flask-api .
 ```
 
 To run the Docker container:
 ```
-docker run -p 3000:3000 fashion-flask-api
+docker run -p 3000:3000 furniture-flask-api
 ```
 
 
