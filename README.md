@@ -1,86 +1,36 @@
-# API WRAPPER
+# Furniture Image Classification API
+Flask API for classifying furniture images. Takes an image as input and returns the predicted label and class as output.
 
-ApiWrapper wrap your ML model into an API.
-Default routes are `predict` and `predict_proba`.
+## Dataset
+The dataset provided for this task consists of 300 images of furniture items, divided into three classes: "Bed", "Sofa", and "Chair".
 
-## Install
+## Model
+The model used for this task is a deep learning classification model built using TensorFlow Keras. The model was trained on the dataset using the flow_from_directory() function from TensorFlow's data generator to directly read images from the directory. The dataset was split into two directories, "train" and "test", each with all classes with a 80/20 split. The model was trained for 10 epochs with a batch size of 32. 
 
+## API
+The API was built using Python and Flask. The API server is run by executing python run_api.py, which imports the trained model and initializes the Flask app. The app's endpoints are located in `apiwrapper.py`.
+
+To use the API, a client sends an image in the form of a base64-encoded string to the /predict_image endpoint. The API then returns a JSON response with a status field, a label field containing the predicted label, and a class field containing the class of the predicted label.
+
+To test the API, run python `test_api.py`. This script loads an example image from the dataset, encodes it, sends it to the API, and prints the response.
+
+## Docker
+The API is containerized using Docker. The Dockerfile contains the necessary commands to build the Docker image and the `run_api.py` file is set as the entry point.
+
+To build the Docker image:
 ```
-git clone https://github.com/arnauddelaunay/apiwrapper.git
-cd apiwrapper
-sudo pip install -r requirements.txt
+docker build -t fashion-flask-api .
 ```
 
-## Usage
-
-Once your model is loaded and fit, you can execute the api and pass the model as an argument
-
+To run the Docker container:
 ```
-#!python
-import apiwrapper
-API = apiwrapper.Api(model=model)
-API.run(port=5000, debug=True)
+docker run -p 3000:3000 fashion-flask-api
 ```
 
-### Endpoints
+
+
+
+## Endpoints
 
  * **/** [GET] : info about the model
- * **/predict** [POST] : return the prediction of the model for the given input. FORMAT : {"data" : np.ndarray}
- * **/predict_proba** [POST] : return the prediction probabilities of the model for the given input. FORMAT : {"data" : np.ndarray}
-
-### Complete exemple
-
-Run `python main.py`
-
-And test the API : 
-```
-curl -X POST -H "Content-Type: application/json" -d '{"data" : [
-	[0.1, 0, 0.6, 1.2],
-	[ 1.2,  1.3,  3.1, 1.8]
-	]
-}' "http://localhost:5000/predict"
-```
-gives the following results : `{"results": [0,2]}`.
-
-## DOCKERIZE THE API
-
-Use Docker to serve your API in background on the local network.
-
-### Build
-Go into the root of this repo
-
-```
-$ sudo docker build -t mymodel .
-```
-
-### Run
-
-```
-$ sudo docker run -d --name mycontainer -p 5000:5000 mymodel
-```
-
-### Test
-
-Check your docker IP (here `172.17.0.1`):
-```
-$ ifconfig
-docker0   Link encap:Ethernet  HWaddr 02:42:a8:32:08:90  
-          inet adr:172.17.0.1  Bcast:0.0.0.0  Masque:255.255.0.0
-          ... ... ...
-          ... ... ...
-```
-
-You can now test the API : 
-```
-$ curl -X POST -H "Content-Type: application/json" -d '{"data" : [
-	[0.1, 0, 0.6, 1.2],
-	[ 1.2,  1.3,  3.1, 1.8]
-	]
-}' "http://172.17.0.1:5000/predict"
-```
-gives the following results : `{"results": [0,2]}`.
-
-
-
-
-
+ * **/predict_image** [POST] : return the prediction of the model for the given input image.
