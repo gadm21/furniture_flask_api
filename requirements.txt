@@ -1,0 +1,125 @@
+absl-py==1.0.0
+# appnope @ file:///Users/ktietz/demo/mc3/conda-bld/appnope_1629146036738/work
+# asttokens @ file:///opt/conda/conda-bld/asttokens_1646925590279/work
+astunparse==1.6.3
+attrs==22.2.0
+# backcall @ file:///home/ktietz/src/ci/backcall_1611930011877/work
+cachetools==5.0.0
+certifi==2021.10.8
+charset-normalizer==2.0.12
+click==8.1.2
+cloudpickle==2.2.0
+cycler==0.11.0
+# debugpy @ file:///Users/builder/miniconda3/envs/prefect/conda-bld/debugpy_1637092214173/work
+# decorator @ file:///opt/conda/conda-bld/decorator_1643638310831/work
+dill==0.3.6
+dm-tree==0.1.8
+# entrypoints @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_croot-jb01gaox/entrypoints_1650293758411/work
+etils==0.9.0
+exception==0.1.0
+# executing @ file:///opt/conda/conda-bld/executing_1646925071911/work
+Flask==2.2.3
+flatbuffers==2.0
+fonttools==4.33.3
+functorch==1.13.0
+gast==0.5.3
+google-auth==2.6.6
+google-auth-oauthlib==0.4.6
+google-pasta==0.2.0
+googleapis-common-protos==1.57.0
+# grpcio @ file:///Users/builder/miniconda3/envs/prefect/conda-bld/grpcio_1637592348692/work
+# h5py @ file:///Users/builder/miniconda3/envs/prefect/conda-bld/h5py_1637162753555/work
+idna==3.3
+imageio==2.17.0
+imageio-ffmpeg==0.4.7
+importlib-metadata==4.11.3
+importlib-resources==5.10.1
+# ipykernel @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_croot-4yxj69n0/ipykernel_1647009452031/work/dist/ipykernel-6.9.1-py3-none-any.whl
+# ipython @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_croot-6azbiq8u/ipython_1649078957462/work
+itsdangerous==2.1.2
+# jedi @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/croot-f1t6hma6/jedi_1644315882177/work
+Jinja2==3.1.2
+joblib==1.1.0
+# jupyter-client @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_37f0874a-8189-43c8-984a-7cc5aa7f2a00vekz677y/croots/recipe/jupyter_client_1650622203010/work
+# jupyter-core @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_croot-anh1svu1/jupyter_core_1647002198153/work
+# keras==2.8.0
+# Keras-Preprocessing==1.1.2
+kiwisolver==1.4.2
+libclang==13.0.0
+lxml==4.9.2
+Markdown==3.3.6
+MarkupSafe==2.1.2
+matplotlib==3.5.2
+# matplotlib-inline @ file:///tmp/build/80754af9/matplotlib-inline_1628242447089/work
+moviepy==1.0.3
+mpmath==1.2.1
+# nest-asyncio @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_croot-xymukih3/nest-asyncio_1649931465456/work
+networkx==2.8.8
+nltk==3.7
+# numpy @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_croot-7fnwlldm/numpy_and_numpy_base_1649786873254/work
+oauthlib==3.2.0
+opacus==1.3.0
+opt-einsum==3.3.0
+packaging==21.3
+pandas==1.4.2
+# parso @ file:///opt/conda/conda-bld/parso_1641458642106/work
+# pexpect @ file:///tmp/build/80754af9/pexpect_1605563209008/work
+# pickleshare @ file:///tmp/build/80754af9/pickleshare_1606932040724/work
+Pillow==9.1.0
+proglog==0.1.9
+promise==2.3
+# prompt-toolkit @ file:///tmp/build/80754af9/prompt-toolkit_1633440160888/work
+protobuf==3.20.3
+# psutil==5.9.4
+# ptyprocess @ file:///tmp/build/80754af9/ptyprocess_1609355006118/work/dist/ptyprocess-0.7.0-py2.py3-none-any.whl
+# pure-eval @ file:///opt/conda/conda-bld/pure_eval_1646925070566/work
+pyasn1==0.4.8
+pyasn1-modules==0.2.8
+pyception==0.1.1
+# Pygments @ file:///opt/conda/conda-bld/pygments_1644249106324/work
+pyparsing==3.0.9
+# python-dateutil @ file:///tmp/build/80754af9/python-dateutil_1626374649649/work
+python-docx==0.8.11
+# pytube @ git+https://github.com/nficano/pytube@e8575465468312ca5a6ac9fdbbfa99b93af770e1
+pytz==2022.1
+PyWavelets==1.4.1
+PyYAML==6.0
+# pyzmq @ file:///Users/builder/miniconda3/envs/prefect/conda-bld/pyzmq_1638447141825/work
+regex==2022.7.25
+requests==2.27.1
+requests-oauthlib==1.3.1
+rsa==4.8
+scikit-image==0.19.3
+scikit-learn==1.1.1
+scipy==1.8.0
+seaborn==0.12.1
+# six @ file:///tmp/build/80754af9/six_1644875935023/work
+# stack-data @ file:///opt/conda/conda-bld/stack_data_1646927590127/work
+tensorboard==2.8.0
+tensorboard-data-server==0.6.1
+tensorboard-plugin-wit==1.8.1
+tensorflow
+# tensorflow-estimator==2.6.0
+# tensorflow-macos==2.8.0
+# tensorflow-metadata==1.12.0
+# tensorflow-metal==0.4.0
+# tensorflow-privacy==0.7.3
+# tensorflow-probability==0.12.2
+termcolor==1.1.0
+textblob==0.17.1
+tf-estimator-nightly==2.8.0.dev2021122109
+threadpoolctl==3.1.0
+tifffile==2022.10.10
+toml==0.10.2
+torch==1.13.0
+torchaudio==0.13.1
+torchvision==0.14.1
+# tornado @ file:///Users/ktietz/demo/mc3/conda-bld/tornado_1628698929452/work
+tqdm==4.64.0
+# traitlets @ file:///tmp/build/80754af9/traitlets_1636710298902/work
+typing_extensions==4.2.0
+urllib3==1.26.9
+# wcwidth @ file:///Users/ktietz/demo/mc3/conda-bld/wcwidth_1629357192024/work
+Werkzeug==2.2.3
+wrapt==1.14.0
+zipp==3.8.0
